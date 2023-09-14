@@ -1,0 +1,2 @@
+public class exc3_a2 {
+}
