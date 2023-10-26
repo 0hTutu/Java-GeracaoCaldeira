@@ -1,10 +1,10 @@
-package Exc3_List_ArrayList;
+package src.Exc3_List_ArrayList;
 
 import java.text.SimpleDateFormat;
 
 public class tarefa {
     String titulo;
-    String date;
+    String data;
     String descricao;
     private static SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -17,11 +17,11 @@ public class tarefa {
     }
 
     public String getDate() {
-        return date;
+        return data;
     }
 
     public void setDate(String date) {
-        this.date = date;
+        this.data = date;
     }
 
     public String getDescricao() {
