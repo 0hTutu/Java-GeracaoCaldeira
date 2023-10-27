@@ -8,12 +8,6 @@ public class tarefa {
     String descricao;
     private static SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
-    public tarefa(String titulo, String descricao, String data) {
-        this.titulo = titulo;
-        this.descricao = descricao;
-        this.data = data;
-    }
-
     public String getTitulo() {
         return titulo;
     }
