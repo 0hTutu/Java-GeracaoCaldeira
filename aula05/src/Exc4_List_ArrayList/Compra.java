@@ -8,6 +8,11 @@ public class Compra {
 
     private static SimpleDateFormat fmt = new SimpleDateFormat("dd/MM/yyyy");
 
+    public Compra(String nome, String dataDeValidade) {
+        this.nome = nome;
+        this.dataDeValidade = dataDeValidade;
+    }
+
     public String getNome() {
         return nome;
     }
