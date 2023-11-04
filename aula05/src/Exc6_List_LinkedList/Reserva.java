@@ -11,6 +11,25 @@ public class Reserva {
     String dataDeSaida;
     private static SimpleDateFormat fmt = new SimpleDateFormat("dd/MM/yyyy");
 
+    @Override
+    public String toString() {
+        return "Reserva {" +
+                "nome ='" + nome + '\'' +
+                ", local ='" + local + '\'' +
+                ", cpf ='" + cpf + '\'' +
+                ", dataDeEntrada ='" + dataDeEntrada + '\'' +
+                ", dataDeSaida ='" + dataDeSaida + '\'' +
+                '}';
+    }
+
+    public Reserva(String nome, String local, String cpf, String dataDeEntrada, String dataDeSaida) {
+        this.nome = nome;
+        this.local = local;
+        this.cpf = cpf;
+        this.dataDeEntrada = dataDeEntrada;
+        this.dataDeSaida = dataDeSaida;
+    }
+
     public String getNome() {
         return nome;
     }
