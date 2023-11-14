@@ -1,6 +1,6 @@
 package Exc01_Stack;
 
-public class Livro {
+public class Livro{
 
     String titulo;
     String categoria;
@@ -24,5 +24,10 @@ public class Livro {
 
     public void setCategoria(String categoria) {
         this.categoria = categoria;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro: " + titulo + " - " +  "Categoria: " + categoria;
     }
 }
