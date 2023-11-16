@@ -16,14 +16,13 @@ public class Main {
         ageda.put("Eufanir", 83);
 
         System.out.println(ageda.get("Tereza"));
-
-        terceiraIdade(ageda);
+        verifica(ageda);
 
     }
-    public static void terceiraIdade(Map<String, Integer> ageda){
-        for (Map.Entry<String, Integer> entry : ageda.entrySet()){
-            if(entry.getValue() >= 65){
-                System.out.println(entry.getKey() + "está na terceira idade.");
+    public static void verifica(Map<String, Integer> ageda){
+        for (Map.Entry<String, Integer> entrada : ageda.entrySet()){
+            if(entrada.getValue() >= 65){
+                System.out.println(entrada.getKey() + "está na terceira idade.");
             }
         }
     }
